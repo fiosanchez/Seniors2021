@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: White;
+  font-weight: bold;
+  font-size: 18px;
+  transition:2s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #81668D;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #482258;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #A16FB6;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #820BB4;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="Index.html">Index</a>
+  <a href="thisisus.html">This Is Us</a>
+  <div class="dropdown">
+    <button class="dropbtn">Work
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Seniorsbio.html">Seniors</a>
+      <a href="Seniorsex.html">Experiences</a>
+      <a href="Seniorsact.html">Actuality</a>
+    </div>
+  </div> 
+</div>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 12</div>
+  <img src="seniorsalex.jpg" style="width:100%">
+  <div class="text">Alex Martinez "Jimena/Alexei"</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 12</div>
+  <img src="seniorsbelinda.jpg" style="width:100%">
+  <div class="text">Belinda Coello "Belinda"</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 12</div>
+  <img src="seniorsdaphne.jpg" style="width:100%">
+  <div class="text">Daphne Pineda "Susana/Daph"</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 12</div>
+  <img src="seniorsdigna.jpg" style="width:100%">
+  <div class="text">Digna Argueta "Digna"</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 12</div>
+  <img src="seniorsfio.jpg" style="width:100%">
+  <div class="text">Fiorella Fernandez "Fiore/Fio"</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 12</div>
+  <img src="seniorsisbella.jpg" style="width:100%">
+  <div class="text">Isbella Soto "Isbella"</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 12</div>
+  <img src="seniorskarla.jpg" style="width:100%">
+  <div class="text">Karla Bulnes "Argentina/Argen"</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">8 / 12</div>
+  <img src="seniorspamela.jpg" style="width:100%">
+  <div class="text">Pamela Caceres "Pamela/Pame"</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">9 / 12</div>
+  <img src="seniorswandi.jpg" style="width:100%">
+  <div class="text">Wandald Zuniga "Wanda/Wandi"</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">10 / 12</div>
+  <img src="seniorsdiego.jpg" style="width:100%">
+  <div class="text">Diego Crisanto "Crisanto"</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">11 / 12</div>
+  <img src="seniorsjorge.jpg" style="width:100%">
+  <div class="text">Jorge Sanchez "Jorge"</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">12/ 12</div>
+  <img src="seniorsrafa.jpg" style="width:100%">
+  <div class="text">Rafael Gomez "Rafa/Rafi</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span> 
+  <span class="dot" onclick="currentSlide(9)"></span> 
+  <span class="dot" onclick="currentSlide(10)"></span> 
+  <span class="dot" onclick="currentSlide(11)"></span>
+  <span class="dot" onclick="currentSlide(12)"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
+<center>
+
+<h1> Who Are We? </h1>
+<center>
+<p align=justify>
+Alex: is like the mom of the group, takes care of her friends and she is really extroverted.<br>
+Belinda: is really quiet, does not bothers anyone, and is very kind. <br>
+Daphne: is good at drawing, likes anime, and is very intelligent.<br>
+Digna: she also is quiet but at the same time scandalous, and always eats tomato.<br>
+Fiorella: likes kpop and rock, pass the time in fakeland, loves PSG, best scorpio and is in love with Jisung and Seungmin.<br>
+Isbella: likes to read and to write, is intelligent even if she denies it, and likes to learn new languages.<br>
+Argentina: likes k-dramas, is good at volleyball, and is the most scandalous of the group.<br>
+Pamela: very extroverted, loves Olimpia, and is very serious when is necessary.<br>
+Wandald: is funny, she once told "ando solteroski por si te gustoski" to a teacher, and is very kind.<br>
+Diego: bothers too much but is a good person, is really funny and he also is very tall.<br>
+Jorge: he is very chivalrous, good friend, he has a gift for reading aloud and he is intelligent.<br>
+Rafael: good boy with the girls, also a good friend, has many wierd phrases, and bothers too much.<br>
+
+</body>
+</html> 
